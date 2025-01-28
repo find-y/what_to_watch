@@ -1,41 +1,49 @@
-### Как запустить проект:
+## Описание
+Сервис для выбора фильма.
 
-Клонировать репозиторий и перейти в него в командной строке:
+Основные возможности:
+- добавить мнение о фильме
+- получить рандомный фильм с рецензией
 
+## Технический стек
+- Python
+- Flask
+- Alembic
+- Jinja2
+
+## Запуск проекта
+
+1.Создайте файл .env. По необходимости, внесите свои данные.
 ```
-git clone 
+cp env_example .env
+nano .env
 ```
 
-```
-cd what_to_watch
-```
-
-Cоздать и активировать виртуальное окружение:
+2.Установите и активируйте виртуальное окружение
 
 ```
 python3 -m venv venv
 ```
 
-```
-source venv/bin/activate
-```
-или для пользователей Windows
+* Если у вас Linux/macOS
 
-```
-source env/Scripts/activate
-```
+    ```
+    source venv/bin/activate
+    ```
 
-Установить зависимости из файла requirements.txt:
+* Если у вас windows
 
-```
-python3 -m pip install --upgrade pip
-```
+    ```
+    source venv/scripts/activate
+    ```
 
+3.Установите зависимости из файла requirements.txt
 ```
 pip install -r requirements.txt
-```
+``` 
 
-Запустить проект:
+
+4.Запустите проект:
 
 ```
 flask run
